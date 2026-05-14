@@ -8,6 +8,7 @@ st.set_page_config(
 )
 
 st.title('🔍 AI Search Agent')
+
 st.markdown(
     """
     Ask a question and the agent will search the web for 

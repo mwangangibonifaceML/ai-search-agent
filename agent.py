@@ -45,6 +45,7 @@ def process_query(query: str, hf_api_key: str = hf_api_key) -> str:
         }
     }
     
+    #* first LLM call to get the assistant's response and determine if a tool call is needed
     response = client.chat_completion(
         messages=[
             {"role": "system", "content": "You are a helpful assistant that provides concise answers based on web search results."},
